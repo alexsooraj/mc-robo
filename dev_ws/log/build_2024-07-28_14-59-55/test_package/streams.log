@@ -1,0 +1,45 @@
+[0.193s] Invoking command in '/home/alex/mc-robo/dev_ws/build/test_package': /usr/bin/cmake /home/alex/mc-robo/dev_ws/src/test_package -DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package
+[3.876s] -- The C compiler identification is GNU 13.2.0
+[6.779s] -- The CXX compiler identification is GNU 13.2.0
+[7.096s] -- Detecting C compiler ABI info
+[7.985s] -- Detecting C compiler ABI info - done
+[8.105s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.108s] -- Detecting C compile features
+[8.144s] -- Detecting C compile features - done
+[8.234s] -- Detecting CXX compiler ABI info
+[9.066s] -- Detecting CXX compiler ABI info - done
+[9.184s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.188s] -- Detecting CXX compile features
+[9.193s] -- Detecting CXX compile features - done
+[9.323s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[10.745s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[11.947s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[12.621s] Error parsing '/home/alex/mc-robo/dev_ws/src/test_package/package.xml':
+[67.643s] Traceback (most recent call last):
+[67.647s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[67.649s]     main()
+[67.652s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[67.654s]     raise e
+[67.656s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[67.660s]     package = parse_package_string(
+[67.662s]               ^^^^^^^^^^^^^^^^^^^^^
+[67.665s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[67.667s]     pkg.validate(warnings=warnings)
+[67.669s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[67.671s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[67.673s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/alex/mc-robo/dev_ws/src/test_package/package.xml':
+[67.675s] Package name "My test package" does not follow naming conventions
+[67.948s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[67.951s]   execute_process(/usr/bin/python3
+[67.953s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[67.955s]   /home/alex/mc-robo/dev_ws/src/test_package/package.xml
+[67.957s]   /home/alex/mc-robo/dev_ws/build/test_package/ament_cmake_core/package.cmake)
+[67.959s]   returned error code 1
+[67.963s] Call Stack (most recent call first):
+[67.965s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[67.967s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[67.969s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[67.971s] 
+[67.973s] [0m
+[67.975s] -- Configuring incomplete, errors occurred!
+[67.993s] Invoked command in '/home/alex/mc-robo/dev_ws/build/test_package' returned '1': /usr/bin/cmake /home/alex/mc-robo/dev_ws/src/test_package -DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package

@@ -1,78 +1,142 @@
-[6.305s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
-[6.306s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71f8f2a5ba70>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71f8f2bfc380>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71f8f2bfc380>>, mixin_verb=('build',))
-[8.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
-[8.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
-[8.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
-[8.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
-[8.153s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
-[8.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
-[8.155s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alex/mc-robo/dev_ws'
-[8.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
-[8.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
-[8.158s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
-[8.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
-[8.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
-[8.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
-[8.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
-[8.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
-[8.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
-[8.494s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
-[8.495s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
-[8.495s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
-[8.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
-[8.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
-[8.497s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
-[8.498s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
-[8.499s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
-[8.500s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
-[8.501s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
-[8.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
-[8.503s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
-[8.504s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
-[8.504s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
-[8.505s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
-[8.506s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
-[8.507s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
-[8.508s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
-[8.508s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
-[8.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
-[8.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
-[8.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
-[8.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
-[8.511s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
-[8.511s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
-[8.512s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
-[8.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
-[8.513s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
-[8.514s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
-[8.514s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
-[8.515s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
-[8.515s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
-[8.515s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
-[8.927s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
-[8.927s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
-[8.979s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
-[8.990s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
-[9.694s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
-[9.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[9.702s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
-[9.703s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
-[9.703s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
-[9.704s] DEBUG:colcon.colcon_core.event_reactor:joining thread
-[9.950s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
-[9.951s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
-[9.952s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
-[9.952s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
-[10.365s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
-[10.366s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[10.474s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
-[10.476s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.ps1'
-[10.498s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/mc-robo/dev_ws/install/_local_setup_util_ps1.py'
-[10.523s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.ps1'
-[10.534s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.sh'
-[10.546s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/mc-robo/dev_ws/install/_local_setup_util_sh.py'
-[10.550s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.sh'
-[10.557s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.bash'
-[10.577s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.bash'
-[10.585s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.zsh'
-[10.607s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.zsh'
+[1.289s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.290s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b9e4e62bb60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b9e4e5cc440>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b9e4e5cc440>>, mixin_verb=('build',))
+[2.593s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.594s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.595s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.596s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.596s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alex/mc-robo/dev_ws'
+[2.597s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.598s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.599s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.600s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.601s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.602s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.839s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.840s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.841s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.842s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.843s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.845s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.846s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.847s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.849s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.853s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.854s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.856s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.857s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.858s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['ignore', 'ignore_ament_install']
+[2.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ignore'
+[2.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ignore_ament_install'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['colcon_pkg']
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'colcon_pkg'
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['colcon_meta']
+[2.863s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'colcon_meta'
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['ros']
+[2.864s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ros'
+[2.883s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_package' with type 'ros.ament_cmake' and name 'test_package'
+[2.883s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.884s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.040s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.041s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.072s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[3.082s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.738s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_args' from command line to 'None'
+[3.739s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_target' from command line to 'None'
+[3.739s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.740s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_clean_cache' from command line to 'False'
+[3.740s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_clean_first' from command line to 'False'
+[3.740s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_force_configure' from command line to 'False'
+[3.741s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'ament_cmake_args' from command line to 'None'
+[3.741s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'catkin_cmake_args' from command line to 'None'
+[3.741s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.742s] DEBUG:colcon.colcon_core.verb:Building package 'test_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alex/mc-robo/dev_ws/build/test_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alex/mc-robo/dev_ws/install/test_package', 'merge_install': False, 'path': '/home/alex/mc-robo/dev_ws/src/test_package', 'symlink_install': True, 'test_result_base': None}
+[3.743s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.748s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.750s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alex/mc-robo/dev_ws/src/test_package' with build type 'ament_cmake'
+[3.751s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alex/mc-robo/dev_ws/src/test_package'
+[3.772s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.773s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.774s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/mc-robo/dev_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/alex/mc-robo/dev_ws/src/test_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package
+[7.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/mc-robo/dev_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/alex/mc-robo/dev_ws/src/test_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package
+[7.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/mc-robo/dev_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/alex/mc-robo/dev_ws/build/test_package -- -j2 -l2
+[7.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/mc-robo/dev_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/alex/mc-robo/dev_ws/build/test_package -- -j2 -l2
+[7.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alex/mc-robo/dev_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/alex/mc-robo/dev_ws/build/test_package
+[9.111s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_package)
+[9.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alex/mc-robo/dev_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/alex/mc-robo/dev_ws/build/test_package
+[9.247s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package' for CMake module files
+[9.257s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package' for CMake config files
+[9.262s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_package', 'cmake_prefix_path')
+[9.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/hook/cmake_prefix_path.ps1'
+[9.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/hook/cmake_prefix_path.dsv'
+[9.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/hook/cmake_prefix_path.sh'
+[9.297s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/bin'
+[9.298s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/lib/pkgconfig/test_package.pc'
+[9.301s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/lib/python3.12/site-packages'
+[9.303s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/bin'
+[9.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.ps1'
+[9.311s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.dsv'
+[9.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.sh'
+[9.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.bash'
+[9.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.zsh'
+[9.355s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/mc-robo/dev_ws/install/test_package/share/colcon-core/packages/test_package)
+[9.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_package)
+[9.498s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package' for CMake module files
+[9.505s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package' for CMake config files
+[9.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_package', 'cmake_prefix_path')
+[9.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/hook/cmake_prefix_path.ps1'
+[9.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/hook/cmake_prefix_path.dsv'
+[9.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/hook/cmake_prefix_path.sh'
+[9.521s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/bin'
+[9.521s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/lib/pkgconfig/test_package.pc'
+[9.524s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/lib/python3.12/site-packages'
+[9.526s] Level 1:colcon.colcon_core.environment:checking '/home/alex/mc-robo/dev_ws/install/test_package/bin'
+[9.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.ps1'
+[9.534s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.dsv'
+[9.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.sh'
+[9.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.bash'
+[9.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.zsh'
+[9.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alex/mc-robo/dev_ws/install/test_package/share/colcon-core/packages/test_package)
+[9.553s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.556s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.558s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.559s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.601s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[9.602s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.603s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.604s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.609s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[9.609s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.611s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.ps1'
+[9.617s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/mc-robo/dev_ws/install/_local_setup_util_ps1.py'
+[9.628s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.ps1'
+[9.635s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.sh'
+[9.640s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alex/mc-robo/dev_ws/install/_local_setup_util_sh.py'
+[9.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.sh'
+[9.651s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.bash'
+[9.655s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.bash'
+[9.662s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alex/mc-robo/dev_ws/install/local_setup.zsh'
+[9.666s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alex/mc-robo/dev_ws/install/setup.zsh'
