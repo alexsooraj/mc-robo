@@ -1,0 +1,2 @@
+Invoking command in '/home/alex/mc-robo/dev_ws/build/test_package': /usr/bin/cmake /home/alex/mc-robo/dev_ws/src/test_package -DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package
+Invoked command in '/home/alex/mc-robo/dev_ws/build/test_package' returned '1': /usr/bin/cmake /home/alex/mc-robo/dev_ws/src/test_package -DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package

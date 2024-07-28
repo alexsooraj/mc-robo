@@ -1,2 +1,101 @@
 [0.000000] (-) TimerEvent: {}
-[0.005519] (-) EventReactorShutdown: {}
+[0.001164] (test_package) JobQueued: {'identifier': 'test_package', 'dependencies': OrderedDict()}
+[0.001738] (test_package) JobStarted: {'identifier': 'test_package'}
+[0.094463] (-) TimerEvent: {}
+[0.098130] (test_package) JobProgress: {'identifier': 'test_package', 'progress': 'cmake'}
+[0.103836] (test_package) Command: {'cmd': ['/usr/bin/cmake', '/home/alex/mc-robo/dev_ws/src/test_package', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/alex/mc-robo/dev_ws/install/test_package'], 'cwd': '/home/alex/mc-robo/dev_ws/build/test_package', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'SSH_CLIENT': '192.168.1.6 56302 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex/mc-robo/dev_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '19', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/alex/mc-robo/dev_ws/build/test_package', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.6 56302 192.168.1.11 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.194835] (-) TimerEvent: {}
+[0.233339] (test_package) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.295212] (-) TimerEvent: {}
+[0.396632] (-) TimerEvent: {}
+[0.498065] (-) TimerEvent: {}
+[0.599546] (-) TimerEvent: {}
+[0.701076] (-) TimerEvent: {}
+[0.802441] (-) TimerEvent: {}
+[0.903923] (-) TimerEvent: {}
+[1.006067] (-) TimerEvent: {}
+[1.107390] (-) TimerEvent: {}
+[1.208825] (-) TimerEvent: {}
+[1.310219] (-) TimerEvent: {}
+[1.411647] (-) TimerEvent: {}
+[1.513144] (-) TimerEvent: {}
+[1.615011] (-) TimerEvent: {}
+[1.717624] (-) TimerEvent: {}
+[1.819078] (-) TimerEvent: {}
+[1.920391] (-) TimerEvent: {}
+[2.021717] (-) TimerEvent: {}
+[2.123342] (-) TimerEvent: {}
+[2.158150] (test_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.223809] (-) TimerEvent: {}
+[2.278644] (test_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.324141] (-) TimerEvent: {}
+[2.425479] (-) TimerEvent: {}
+[2.526811] (-) TimerEvent: {}
+[2.628252] (-) TimerEvent: {}
+[2.729618] (-) TimerEvent: {}
+[2.831076] (-) TimerEvent: {}
+[2.932402] (-) TimerEvent: {}
+[3.034728] (-) TimerEvent: {}
+[3.136415] (-) TimerEvent: {}
+[3.238509] (-) TimerEvent: {}
+[3.340114] (-) TimerEvent: {}
+[3.441636] (-) TimerEvent: {}
+[3.529210] (test_package) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.531192] (test_package) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[3.537505] (test_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.542012] (-) TimerEvent: {}
+[3.545185] (test_package) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.558314] (test_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.576276] (test_package) StdoutLine: {'line': b'-- Configuring done (3.4s)\n'}
+[3.607796] (test_package) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.617643] (test_package) StdoutLine: {'line': b'-- Build files have been written to: /home/alex/mc-robo/dev_ws/build/test_package\n'}
+[3.636409] (test_package) CommandEnded: {'returncode': 0}
+[3.640368] (test_package) JobProgress: {'identifier': 'test_package', 'progress': 'build'}
+[3.650184] (test_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alex/mc-robo/dev_ws/build/test_package', '--', '-j2', '-l2'], 'cwd': '/home/alex/mc-robo/dev_ws/build/test_package', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'SSH_CLIENT': '192.168.1.6 56302 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex/mc-robo/dev_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '19', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/alex/mc-robo/dev_ws/build/test_package', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.6 56302 192.168.1.11 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.657563] (-) TimerEvent: {}
+[3.760090] (-) TimerEvent: {}
+[3.861421] (-) TimerEvent: {}
+[3.933524] (test_package) CommandEnded: {'returncode': 0}
+[3.961735] (-) TimerEvent: {}
+[4.063380] (-) TimerEvent: {}
+[4.077318] (test_package) JobProgress: {'identifier': 'test_package', 'progress': 'install'}
+[4.145615] (test_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alex/mc-robo/dev_ws/build/test_package'], 'cwd': '/home/alex/mc-robo/dev_ws/build/test_package', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'alex', 'SSH_CLIENT': '192.168.1.6 56302 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/alex', 'OLDPWD': '/home/alex/mc-robo/dev_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'alex', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '19', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/alex/mc-robo/dev_ws/build/test_package', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.6 56302 192.168.1.11 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.163744] (-) TimerEvent: {}
+[4.207255] (test_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.212290] (test_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.218483] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/launch/listener.launch.py\n'}
+[4.264152] (-) TimerEvent: {}
+[4.283984] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/launch/talker.launch.py\n'}
+[4.350426] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/ament_index/resource_index/package_run_dependencies/test_package\n'}
+[4.364505] (-) TimerEvent: {}
+[4.418288] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/ament_index/resource_index/parent_prefix_path/test_package\n'}
+[4.465007] (-) TimerEvent: {}
+[4.484743] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/environment/ament_prefix_path.sh\n'}
+[4.551076] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/environment/ament_prefix_path.dsv\n'}
+[4.565197] (-) TimerEvent: {}
+[4.616144] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/environment/path.sh\n'}
+[4.665520] (-) TimerEvent: {}
+[4.684084] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/environment/path.dsv\n'}
+[4.749604] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/local_setup.bash\n'}
+[4.765954] (-) TimerEvent: {}
+[4.816061] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/local_setup.sh\n'}
+[4.866224] (-) TimerEvent: {}
+[4.881954] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/local_setup.zsh\n'}
+[4.946938] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/local_setup.dsv\n'}
+[4.966662] (-) TimerEvent: {}
+[5.012139] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.dsv\n'}
+[5.067083] (-) TimerEvent: {}
+[5.078150] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/ament_index/resource_index/packages/test_package\n'}
+[5.143441] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/cmake/test_packageConfig.cmake\n'}
+[5.167438] (-) TimerEvent: {}
+[5.215217] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/cmake/test_packageConfig-version.cmake\n'}
+[5.267790] (-) TimerEvent: {}
+[5.281929] (test_package) StdoutLine: {'line': b'-- Symlinking: /home/alex/mc-robo/dev_ws/install/test_package/share/test_package/package.xml\n'}
+[5.358334] (test_package) CommandEnded: {'returncode': 0}
+[5.368082] (-) TimerEvent: {}
+[5.469734] (-) TimerEvent: {}
+[5.573249] (-) TimerEvent: {}
+[5.674328] (-) TimerEvent: {}
+[5.777455] (-) TimerEvent: {}
+[5.800017] (test_package) JobEnded: {'identifier': 'test_package', 'rc': 0}
+[5.807654] (-) EventReactorShutdown: {}
